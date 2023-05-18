@@ -110,7 +110,13 @@
         </button>
     </form>
     @endif
-    
+    <form action="{{ route('todo.destroy', $todo) }}" method="Post">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="text-red-600 dark:text-red-400">
+                                                    Delete
+                                                </button>
+                                            </form>
                                     </div>
                                 </td>
                             </tr>
@@ -123,8 +129,17 @@
                             @endforelse
                         </tbody>
                     </table>
-                    
-                </div>
+                    @if ($todosCompleted > 1)
+                    <div class="p-6 text-xl text-gray-900 dark:text-gray-100">
+                        <form action="{{ route('todo.deleteallcompleted') }}" method="Post">
+                            @csrf
+                            @method('delete')
+                            <x-primary-button>
+                                Delete All Completed Task
+                            </x-primary-button>
+                        </form>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
