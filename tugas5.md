@@ -5,7 +5,7 @@
 
 
 **2. Todo Created**
-![image](https://github.com/adhamcahyo/20190140066-todo/assets/127497339/255d65a0-d571-41b6-9dac-0611beeff64c)
+![image](https://github.com/adhamcahyo/20190140066-todo/assets/127497339/e9bb61c1-c71a-4f85-a65d-c798a20fad6e)
 
 
 
